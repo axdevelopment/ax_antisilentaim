@@ -6,6 +6,7 @@ AddEventHandler("taqifshananen", function()
 	local webhookdetectedadmin = "" -- webhook for detected modified x64a.rpf on admin player 
 	local webhookdetectedmod = "" -- webhook for detected modified x64a.rpf on mod player 
 	local webhookdetectedsup = ""  -- webhook for detected modified x64a.rpf on sup player 
+	local botavatarurl = "" -- url discord bot avatar
 	
 
 	if xPlayer.group == 'admin' then
@@ -20,7 +21,7 @@ AddEventHandler("taqifshananen", function()
 			},
 		}
     }
-    PerformHttpRequest(webhookdetectedadmin, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = "https://media.discordapp.net/attachments/968865903875866655/969369670455029810/D_Logo_PURPLE.png?width=603&height=603",embeds = adminlog}), { ['Content-Type'] = 'application/json' })
+    PerformHttpRequest(webhookdetectedadmin, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = botavatarurl,embeds = adminlog}), { ['Content-Type'] = 'application/json' })
 		return
 	end
 
@@ -36,7 +37,7 @@ AddEventHandler("taqifshananen", function()
 			},
 		}
     }
-    PerformHttpRequest(webhookdetectedmod, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = "https://media.discordapp.net/attachments/968865903875866655/969369670455029810/D_Logo_PURPLE.png?width=603&height=603",embeds = modlog}), { ['Content-Type'] = 'application/json' })
+    PerformHttpRequest(webhookdetectedmod, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = botavatarurl,embeds = modlog}), { ['Content-Type'] = 'application/json' })
 		return
 	end
 
@@ -52,7 +53,7 @@ AddEventHandler("taqifshananen", function()
 			},
 		}
     }
-    PerformHttpRequest(webhookdetectedsup, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = "https://media.discordapp.net/attachments/968865903875866655/969369670455029810/D_Logo_PURPLE.png?width=603&height=603",embeds = suplog}), { ['Content-Type'] = 'application/json' })
+    PerformHttpRequest(webhookdetectedsup, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = botavatarurl,embeds = suplog}), { ['Content-Type'] = 'application/json' })
 		return
 	end
 	
@@ -66,7 +67,7 @@ AddEventHandler("taqifshananen", function()
 			},
 		}
     }
-    PerformHttpRequest(webhookdetected, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = "https://media.discordapp.net/attachments/968865903875866655/969369670455029810/D_Logo_PURPLE.png?width=603&height=603",embeds = log}), { ['Content-Type'] = 'application/json' })
+    PerformHttpRequest(webhookdetected, function(err, text, headers) end, 'POST', json.encode({username = "Anti Silent-Aim Logs",  avatar_url = botavatarurl,embeds = log}), { ['Content-Type'] = 'application/json' })
 	print("Du wirst gekickt")
 	DropPlayer(source, "Modifizierte x64a.rpf-Datei entdeckt.")
 end)
