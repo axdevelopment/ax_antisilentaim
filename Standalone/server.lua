@@ -2,7 +2,7 @@ RegisterNetEvent("taqifshananen")
 AddEventHandler("taqifshananen", function()
 	local license = GetPlayerIdentifier(source)
 	local steamname = GetPlayerName(source)
-	local webhook = "https://discord.com/api/webhooks/1047959984278872134/OjtlwqYD4nBOxwudGRWRKCXMkSwiemBzP8TMBMg3QWangeD5l0-kadUPXVJSWWVZL2M6" -- webhook for detected modified x64a.rpf on non-staff player & kick
+	local webhook = "" -- webhook for detected modified x64a.rpf on non-staff player & kick
 	local botavatarurl = "" -- url discord bot avatar
 		
 	local log = {
