@@ -1,8 +1,9 @@
 local QBCore = nil
 local ESX = nil
+local Webhook = '' -- insert your webhook in here
 
 
-if Config.Webhook == '' then
+if Webhook == '' then
     print('^1[AntiAim] ^1Please set your discord bot Webhook in config.lua ^7')
     return
 end
@@ -58,7 +59,7 @@ local function logEvent(source)
                 },
             }
         }
-        PerformHttpRequest(Config.Webhook, function() end, 'POST', json.encode({ username = '[ANTI-AIM]', embeds = embedData}), { ['Content-Type'] = 'application/json' })
+        PerformHttpRequest(Webhook, function() end, 'POST', json.encode({ username = '[ANTI-AIM]', embeds = embedData}), { ['Content-Type'] = 'application/json' })
         if not Config.DropStaff then
             print('^1[AntiAim] ^1STAFF USING MODIFIED RPF FILES: ' .. steamname .. ' ^7')
             return
