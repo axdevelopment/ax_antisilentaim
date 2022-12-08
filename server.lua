@@ -42,6 +42,11 @@ local function logEvent(source)
             playerTrust = true
         end
     end
+
+    if Config.PlayerAcePermission and string.len(Config.PlayerAcePermission) > 0 and IsPlayerAceAllowed(src, Config.PlayerAcePermission) then
+        playerTrust = true
+    end
+
     -- If player is not trusted, kick them and send a log to the discord
     if not playerTrust then
         -- 1st we create the embed, this is a JSON object
