@@ -7,11 +7,12 @@
 - Bypass for user group admin, mod and sup (changeable) *(ONLY ESX)*
 - Kick after detection
 
-## Modified by cqmpacT(Matt.#0666)
-
 ### What is silent aim?
 [YouTube Showcase - What is silent aim?](https://www.youtube.com/watch?v=UC0rSc6ykng)
 To prevent this on your server, download this resource,
 set up your webhooks in the server.lua and stay protected from this sort of bs.
 
-### special thanks to @[cqmpact](https://github.com/cqmpact) for converting the script for the qb-core framework
+## Contributors
+Special thanks to the following people, for contributing and improving this project!
+- [cqmpact](https://github.com/cqmpact)
+- [SeaLife](https://forum.cfx.re/u/sealife/summary)
