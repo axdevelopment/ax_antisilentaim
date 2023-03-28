@@ -16,3 +16,7 @@ set up your webhooks in the server.lua and stay protected from this sort of bs.
 Special thanks to the following people, for contributing and improving this project!
 - [cqmpact](https://github.com/cqmpact)
 - [SeaLife](https://forum.cfx.re/u/sealife/summary)
+
+##deprecation notice/keep in mind:
+- there have been released some new x64a.rpf files, which is not detected by this script.
+- mostly people still use the "old" x64a.rpf-streching files, which is indeed detected by this script.
